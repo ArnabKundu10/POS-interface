@@ -41,6 +41,7 @@ const App: React.FC = () => {
 
   const handleCheckout = (details: CustomerDetails): void => {
     setCustomerDetails(details);
+    console.log(customerDetails)
     setReceipt({
       services: cart,
       customerDetails: details,
