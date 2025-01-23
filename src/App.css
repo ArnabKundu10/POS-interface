@@ -2,9 +2,16 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
-
+.btn-design{
+  background: linear-gradient(to right,#646cffc1,#646cffb9,#9499f3b9);
+}
+.color-v{
+  color: #5e66ffaa;
+}
+.color-g{
+  background: linear-gradient(to right,#4ffd6faa,#5eff7caa,#9df3adaa);
+}
 .logo {
   height: 6em;
   padding: 1.5em;

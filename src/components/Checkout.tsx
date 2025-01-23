@@ -40,7 +40,7 @@ const Checkout: React.FC<CheckoutProps> = ({ cart, handleCheckout }) => {
             <label htmlFor="phone" className="form-label">Phone</label>
             <input type="tel" className="form-control" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
           </div>
-          <button type="submit" className="btn btn-success">Complete Checkout</button>
+          <button type="submit" className="btn btn-success color-g">Complete Checkout</button>
         </form>
       )}
     </div>

@@ -3,6 +3,7 @@ import ServiceList from './components/ServiceList';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import Receipt from './components/Receipt';
+import "./App.css"
 
 interface Service {
   id: number;
@@ -29,7 +30,9 @@ const App: React.FC = () => {
   const [receipt, setReceipt] = useState<ReceiptDetails | null>(null);
 
   const addToCart = (service: Service): void => {
+    if(cart.includes(service)===false)
     setCart((prevCart) => [...prevCart, service]);
+    else alert("Item is already present in the cart.");
   };
 
   const removeFromCart = (index: number): void => {
@@ -49,7 +52,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container py-4">
-      <h1 className="text-center mb-4">POS Interface</h1>
+      <h1 className="text-center mb-4">Point Of Sale <span className='color-v'>(</span> POS <span className='color-v'>)</span>  Interface </h1>
       {!receipt ? (
         <>
           <ServiceList addToCart={addToCart} />
