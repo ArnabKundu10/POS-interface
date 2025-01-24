@@ -56,7 +56,7 @@ const Receipt: React.FC<ReceiptProps> = ({ receipt }) => {
     };
   return (
    <div className="text-center">
-    <div className="p-5 ms-5 me-5 border border-white">
+    <div className="p-md-5 ms-md-5 me-md-5 border border-white">
       <h2>Receipt</h2>
       <p><strong>Date:</strong> {receipt.date.toLocaleDateString()}</p>
       <p><strong>Customer Name:</strong> {receipt.customerDetails.name}</p>
@@ -81,7 +81,7 @@ const Receipt: React.FC<ReceiptProps> = ({ receipt }) => {
       <h4>Total: ${receipt.total}</h4>
       <p><button onClick={downloadReceipt} className='btn btn-design text-white fw-bold'>Download your receipt</button></p>
     </div>
-    <button onClick={()=>window.location.reload()} className='m-5 btn btn-design text-white fw-bold'>Back to the Home</button>
+    <button onClick={()=>window.location.reload()} className='m-md-5 btn btn-design text-white fw-bold'>Back to the Home</button>
     </div>
   );
 };
