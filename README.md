@@ -48,3 +48,9 @@ export default tseslint.config({
   },
 })
 ```
+
+![Screenshot 2025-01-24 190610](https://github.com/user-attachments/assets/2c0ad136-5306-468d-a9fc-e400aab90993)
+![Screenshot 2025-01-24 190557](https://github.com/user-attachments/assets/ffabba9f-0f74-45fa-be35-d1e49f20b98d)
+
+
+
